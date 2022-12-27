@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <title>Le Saloon</title>
+    <script src="https://kit.fontawesome.com/daa204c057.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header-container" id="header">
+        <div class="header-flex">
+            <div class="header-callus">
+                <p><i class="fa-solid fa-phone fa-shake"></i> Call today:</p>
+                <a href="#">+1 800 555–123–4567</a>
+            </div>
+            <div class="header-logo">
+                <a href="#"><img src="./images/logo.png" alt="Le Saloon logo"></a>
+            </div>
+            <div class="header-btn">
+                <a href="#">Book a SPA Session</a>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="nav-bar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#services">SPA & SKINCARE</a></li>
+                <li><a href="#specialists">SPECIALISTS</a></li>
+                <li><a href="#testimonials">TESTIMONIALS</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#contacts">CONTACTS</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="banner-container" id="banner">
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h1>Whenever you feel too tired</h1>
+                    <p>depressed or anxious about your daily, hectic routine….</p>
+                    <p>Whenever your work/life balance hangs in the air and gets out of hand…<br>we've got an answer for you!</p>
+                </div>
+                <div class="banner-btn">
+                    <a href="#services">MORE INFO</a>
+                </div>
+                <div class="slide">
+                    <div class="slide-btn1" onclick="changeBanner1();"></div>
+                    <div class="slide-btn2" onclick="changeBanner2();"></div>
+                    <div class="slide-btn3" onclick="changeBanner3();"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-container">
+        <div class="services" id="services">
+            <div class="services-title">
+                <h1>Exclusive Services </h1>
+            </div>
+            <div class="services-content">
+                <div class="services-pricesBox">
+                    <div class="services-prices">
+                        <a class="prices" onclick="changePhoto('./images/braids.jpg'), scrub();">
+                            <p>BODY SCRUB</p>
+                            <p>€25</p>
+                        </a>
+                        <a class="prices" onclick="changePhoto('./images/waxing.jpg'), waxing();">
+                            <p>WAXING</p>
+                            <p>€15</p>
+                        </a>
+                        <a class="prices" onclick="changePhoto('./images/facial-care.jpg'), facialCare();">
+                            <p>FACIAL CARE</p>
+                            <p>€30</p>
+                        </a>
+                        <a class="prices" onclick="changePhoto('./images/medi-spa.jpg'), mediSpa();">
+                            <p>MEDI-SPA</p>
+                            <p>€40</p>
+                        </a>
+                        <a class="prices" onclick="changePhoto('./images/massages.jpg'), massages();">
+                            <p>MASSAGES</p>
+                            <p>€20</p>
+                        </a>
+                        <a class="prices" onclick="changePhoto('./images/hair-cut.jpg'), hairCut();">
+                            <p>HAIR CUT</p>
+                            <p>€45</p>
+                        </a>
+                        <div class="prices-btnBox">
+                            <button class="prices-btn" type="submit">
+                                MAKE AN APPOINTMENT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-description">
+                    <div class="imgBox">
+                        <img src="./images/braids.jpg" alt="" id="photo">
+                    </div>
+                    <div class="services-description-content">
+                        <h2 id="serviceTitle">BODY SCRUB</h2>
+                        <h3 id="servicePrice" >€25.00</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="specialists-container">
+        <div class="specialists" id="specialists">
+            <div class="specialists-title">
+                <h1>Our Spa & Skincare Team</h1>
+            </div>
+            <div class="specialists-content">
+                <div class="specialistsBox">
+                    <div class="specialists-imgBox">
+                        <img src="./images/specialist1.jpg" alt="">
+                    </div>
+                    <div class="specialists-text">
+                        <h2>Mary LeBlanc</h2>
+                        <h3>SALON'S OWNER</h3>
+                        <p>Before setting up her own salon, Mary's been working at a prestigious SPA venue in Italy...</p><br>
+                        <p>There she was able to save a sufficient amount of a principal capital in order to set up her very own SPA & skin care salon in Lisbon, Portugal.</p>
+                        <div class="specialists-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialistsBox">
+                    <div class="specialists-imgBox">
+                        <img src="./images/specialist2.jpg" alt="">
+                    </div>
+                    <div class="specialists-text">
+                        <h2>Emily Nichols</h2>
+                        <h3>SENIOR SPA SPECIALIST</h3>
+                        <p>Emily's career as a SPA care specialist has spanned to include work at numerous prestigious salons across the EU...</p><br>
+                        <p>But after moving with her family from England to Portugal, Emily have made a fortunate decision to become a part of our salon's team!</p>
+                        <div class="specialists-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialistsBox">
+                    <div class="specialists-imgBox">
+                        <img src="./images/specialist3.jpg" alt="">
+                    </div>
+                    <div class="specialists-text">
+                        <h2>Stacy Blunt</h2>
+                        <h3>JUNIOR SPA SPECIALIST</h3>
+                        <p>The reason why Stacy is so natural with everything regarding skin's health and skin care treatments may have to do with her prior medical degree...</p><br>
+                        <p>For a few years following her med school graduation she found her perfect job!</p>
+                        <div class="specialists-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialistsBox">
+                    <div class="specialists-imgBox">
+                        <img src="./images/specialist4.jpg" alt="">
+                    </div>
+                    <div class="specialists-text">
+                        <h2>Danielle Marques</h2>
+                        <h3>JUNIOR SPA SPECIALIST</h3>
+                        <p>Danielle has been working in a SPA industry well since she was 17... Her skills and her positive style of work have swiftly made her our leading specialist in the feet and hands treatment fields!</p><br>
+                        <p>Also, Danielle is the head of our Gentlemen's services department.</p>
+                        <div class="specialists-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-container">
+        <div class="testimonials" id="testimonials">
+            <div class="testimonials-title">
+                <h1>Customer Reviews</h1>
+            </div>
+            <div class="testimonials-content">
+                <div class="testimonialsBox">
+                    <div class="testimonials-imgBox">
+                        <img src="./images/test1.jpg" alt="">
+                    </div>
+                    <div class="testimonials-text">
+                        <h1>"</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, officiis iure. Odio modi quas, quod quis repudiandae, dolorum sunt voluptates accusantium veritatis cupiditate perspiciatis aspernatur quisquam laboriosam eaque vel voluptate.</p>
+                        <h2>Selina Hudson</h2>
+                        <h3>Acress</h3>
+                    </div>
+                </div>    
+                <div class="testimonialsBox">
+                    <div class="testimonials-imgBox">
+                        <img src="./images/test2.jpg" alt="">
+                    </div>
+                    <div class="testimonials-text">
+                        <h1>"</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, officiis iure. Odio modi quas, quod quis repudiandae, dolorum sunt voluptates accusantium veritatis cupiditate perspiciatis aspernatur quisquam laboriosam eaque vel voluptate.</p>
+                        <h2>Jennifer Smith</h2>
+                        <h3>Model</h3>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <section class="gallery container">
+        <div class="gallery" id="gallery">
+            <div class="gallery-title">
+                <h1>Gallery</h1>
+            </div>
+            <div class="image-gallery">
+                <img src="./images/gallery1.jpg" alt="">
+                <img src="./images/gallery2.jpg" alt="">
+                <img src="./images/gallery3.jpg" alt="">
+                <img src="./images/gallery4.jpg" alt="">
+                <img src="./images/gallery5.jpg" alt="">
+                <img src="./images/gallery6.jpg" alt="">
+                <img src="./images/gallery7.jpg" alt="">
+                <img src="./images/gallery8.jpg" alt="">
+                <img src="./images/gallery9.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="contacts-container">
+        <div class="contacts" id="contacts">
+            <div class="contacts-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="contacts-content">
+                <div class="contacts-callus">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Call today:</p>                   
+                    <a href="#">+1 800 555–123–4567</a>
+                </div>
+                <div class="contacts-email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>Contact</p>
+                    <a href="#">lesaloon@lesaloon.com</a>
+                </div>
+                <div class="contacts-adress">
+                    <i class="fa-regular fa-map"></i>
+                    <p>Adress</p>
+                    <a href="#">Lisboa, Portugal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Copyright © 2022 <a href="https://andremrks.github.io/social-links/" target="_blank">André Marques</a> All Right Reserved</p>
+        </div>
+    </footer>
+
+    <div class="top-btn">
+        <a href="#">^</a>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
+
